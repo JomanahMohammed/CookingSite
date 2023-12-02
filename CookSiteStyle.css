@@ -1,0 +1,298 @@
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* header start */
+/* Frequently-Used-Classes */ 
+.primary-text{
+    color: yellow;
+   font-size: 50px;
+ 
+}
+.btn{
+    display: inline-block;
+    padding: 11px 22px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+
+}
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+  header{
+   height: 100vh;
+   background: url(homepage.jpg) center center/cover no-repeat;
+   position: relative;
+  }
+  body{
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  #navbar img{
+    width: 80px;
+    margin-left: 100px;
+  }
+  #navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul{
+    list-style-type: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  #navbar ul {
+    display: flex;
+    margin-right: 100px;
+  }
+  #navbar ul li a {
+    padding: 15px 20px;
+    color: whitesmoke;
+    font-weight:600 ;
+  }
+  #navbar ul li a:hover {
+    border-bottom: 2px yellow solid ;
+  }
+
+  header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    height: 75vh;
+    text-align: center;
+  }
+  header .content h1{
+font-size: 40px;
+color:whitesmoke;
+  }
+  header .content p{
+    margin: 20px 0 40px;
+    color: whitesmoke;
+  }
+  header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0,0,0,0.6);
+  }
+    /* header end */
+
+    /* About section */
+    
+    main #About::before
+    {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color:  rgb(0,0,0,0.6);
+    }
+    main #About{
+
+        margin: auto;
+        height: 100hv;
+        background:url(Aboutpage1.jpg) center center/cover no-repeat;
+        position: relative;
+      
+    }
+    #About{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             padding: 25px 0;
+    }
+P span {
+    font-weight:50px;
+    color: yellow;
+    text-align: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 25px;
+}
+#About h2 {
+font-size: 50px;
+color:white;
+text-align: center;
+margin-bottom: 4rem;
+}
+#About .About-content {
+    display: flex;
+    justify-content: space-between;
+
+}
+#About .About-content img {
+    width: 300px;
+}
+#About .About-content p{
+    color: whitesmoke;
+    margin-right: 5rem;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.9;
+    text-align: center;
+    align-items: center;
+}
+.A1{
+ 
+  font-size: 25px;
+
+}
+/* About section end */
+
+/* Recipe section start */
+
+#recipe {
+    padding: 6rem 0;
+    max-width: 1100px;
+    margin: auto;
+    height: 99hv;
+    background:url(Recipespage.jpg) center center/cover no-repeat;
+    position: relative; 
+}
+
+main #recipe::before
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color:  rgb(0,0,0,0.6);
+}
+#recipe h2 
+{
+  font-size: 50px; 
+  color: white;
+  text-align: center;
+  margin-bottom: 4rem;
+  justify-content:center ;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+#recipe .recipe-items{
+  display:flex;
+    justify-content:center ;
+    align-items: center;
+}
+#recipe .recipe-items .recipe-item{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+#recipe .recipe-items .recipe-item img
+{
+width: 220px;
+margin-right: 20px;
+margin-left: 20px;
+}
+#recipe .recipe-items .recipe-item h3{
+    color: yellow;
+    border-bottom: 2px dashed rgb(169, 161, 161);
+    padding-bottom: 7px ;
+    margin-bottom: 4px;
+    position: relative;
+}
+#recipe .recipe-items .recipe-item p{
+  color: white;
+
+}
+#recipe .btn {
+    background:  rgb(0,0,0,0.6);
+    margin-left: 600px;
+    color:white;
+    border: 3px solid black ;
+}
+#recipe .btn:hover {
+   background-color: black;
+}
+/* Recipe section end */
+html{
+  background-color: black;
+
+}
+/* contact section start */
+#contact {
+  padding: 5rem 0;
+  background: black;
+}
+
+#contact .container {
+  max-width: 500px;
+}
+
+#contact .contact-content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#contact .contact-content h3{
+  font-size: 25px;
+  color: yellow;
+  margin-bottom: 15px;
+}
+#contact .contact-content a i {
+  color: rgba(255, 255, 0, 0.922);
+  background-color: black;
+  padding: 17px;
+  border-radius: 50%;
+  font-size: 15px;
+  margin-left: 5px;
+  border: 2px white double;
+}
+
+#contact .contact-content a i:hover{
+  background:yellow;
+  color: gray;
+}
+/* contact section end */
+/* footer section start */
+
+#footer {
+  background: black;
+  text-align: center;
+  color: white;
+  padding: 15px 0;
+  font-size: 14px;
+}
+#footer a {
+  color: white;
+}
+/* footer section end */
+
+.recipes-page{
+  color: white;
+  padding: 40px;
+  text-align: center;
+  align-items: center;
+  
+}
+.recipe-title {
+  color: whitesmoke;
+  padding: 10px;
+  margin: 10px ;
+  font-size: 20px;
+}
+.recipe-highlight{
+  font-size: 25px;
+  color: yellow;
+  text-decoration:none;
+  font-style: italic;
+}
+hr{
+  border: 3px rgba(245, 245, 245, 0.494) double;
+}
