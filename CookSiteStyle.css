@@ -296,3 +296,33 @@ html{
 hr{
   border: 3px rgba(245, 245, 245, 0.494) double;
 }
+
+
+@media (min-width:950px) and (max-width:1150px){
+    .content .image img{
+        width: 330px;
+    }
+}
+@media (max-width:950px){
+  .content , nav{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content .image , .content .text{
+    width: 80%;
+
+  }
+body::after{
+    clip-path: circle(50% at bottom );
+}
+.content .text p{
+    font-size: 10px;
+    line-height: 15px;
+
+}
+.content .text h2{
+    font-size: 20px;
+
+}
+}
+
